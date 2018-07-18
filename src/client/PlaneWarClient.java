@@ -72,26 +72,9 @@ public class PlaneWarClient extends MyFrame {
 	// // 存放敌方飞机的容器
 	public List<EnemyPlane> enemyplanes = new ArrayList<>();
 
-	// 10个01小怪兽飞机
+	
 	{
-		for (int i = 0; i < 100; i++) {
-			EnemyPlane enemymonster_01_1 = new EnemyPlane(this,  - (i * 120 + 20) - 120, 200, 6, false);
-			enemyplanes.add(enemymonster_01_1);
-		}
-	
-
-	// 10个02号小怪兽
-	
-		for (int i = 0; i < 100; i++) {
-			EnemyPlane enemymonster_02_2 = new EnemyPlane(this, 200 + (i * 200 + 20), 26, 7, false);
-			enemyplanes.add(enemymonster_02_2);
-		}
 		
-//		EnemyPlane enemyplane_06 = new EnemyPlane(this, 200, 200, 8, false);
-//		enemyplanes.add(enemyplane_06);
-		
-	
-	
 		EnemyPlane enemyplane_01 = new EnemyPlane(this, 100, -100, 1, false);
 		enemyplanes.add(enemyplane_01);
 		EnemyPlane enemyplane_02 = new EnemyPlane(this, 100, 100, 1, false);
@@ -107,8 +90,6 @@ public class PlaneWarClient extends MyFrame {
 	}
 	
 	
-
-//	 public EnemyPlane enemyplane_01 = new EnemyPlane(this, 100, 200, 3, false);
 	@Override
 	public void launchGame() {
 		// TODO Auto-generated method stub
@@ -169,8 +150,6 @@ public class PlaneWarClient extends MyFrame {
 	public void paint(Graphics g) {
 		// TODO Auto-generated method stub
 
-		// background_01.draw(g);
-		// background
 		for (int i = 0; i < background.size(); i++) {
 			BackGround background_01 = background.get(i);
 			background_01.draw(g);
@@ -195,13 +174,7 @@ public class PlaneWarClient extends MyFrame {
 			myplane_03.Dispear(3);
 			
 		}
-//		myplane.draw(g);
-//		myplane.draw(g);
 		
-		
-		
-//		 enemyplane_01.draw(g);
-
 		// 敌方子弹
 		for (int i = 0; i < missiles.size(); i++) {
 			Missile missile = missiles.get(i);
@@ -222,69 +195,8 @@ public class PlaneWarClient extends MyFrame {
 
 		g.setFont(new Font("微软雅黑", Font.BOLD, 30));
 
-		// g.drawString("missile's size:"+missiles.size(), 100, 180);
-		// g.drawString("enemyplanes's size:"+enemyplanes.size(), 100, 130);
-	}
 	
-//	static JFrame frame = new JFrame();
-//	public static void main(String[] args) {
-//		
-//		//frame.getContentPane().setBackground(Color.BLUE);
-//		frame.setSize(500,760);
-//		frame.setLocationRelativeTo(null);
-//		frame.setVisible(true);
-//		
-//		
-//		 /*Container c =frame.getContentPane();
-//		  c.setLayout(null);*/
-//		 //frame.setIconImage((new ImageIcon("img/start.png")).getImage());
-//		  JButton a = new JButton();
-//		  JButton b = new JButton();
-//		  JButton d = new JButton();
-//		  ImageIcon aa = new ImageIcon("src/img/a.png");
-//	        ImageIcon bb= new ImageIcon("src/img/b.png");
-//	        ImageIcon dd = new ImageIcon("src/img/d.png");
-//	        a.setIcon(aa);
-//	        b.setIcon(bb);
-//	        d.setIcon(dd);
-//
-//      	 a.setSize(230, 63);
-//       	b.setSize(230, 63);
-//    	d.setSize(230, 63);
-//    	a.setBackground(Color.BLACK);
-//    	b.setBackground(Color.BLACK);
-//    	d.setBackground(Color.black);
-//       	a.setLocation(147, 397);
-//       	b.setLocation(147, 502);
-//       	d.setLocation(147, 605);
-//       	frame.add(a);
-//    	frame.add(b);
-//    	frame.add(d);
-//		  b.setToolTipText("A键飞机向左移动"
-//				 +"  "+ "W键飞机向上移动"
-//				  +"  "+"D键飞机向右移动"
-//				 +"  "+"S键飞机向下移动"+"  "+"J键发射子弹");
-//		a.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//			closeThis();
-//			new	PlaneWarClient().launchGame();
-//				
-//		}
-//		});
-//		d.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//			closeThis();
-//				
-//		}
-//		});
-//		
-//}
-//	
-//
-//	public static void closeThis() {
-//		frame.dispose();
-//	}
-//	
+	}
 	
 	public static void main(String[] args) {
 		new PlaneWarClient().launchGame();

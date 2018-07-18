@@ -24,25 +24,6 @@ public class ImageUtil {
 		images.put("myplane_02", GameUtil.getImage(Constant.IMG_PRE+"plane/myplane/myplane_02.png"));
 		images.put("myplane_03", GameUtil.getImage(Constant.IMG_PRE+"plane/myplane/myplane_03.png"));
 		
-		/*
-		 * µÐ·½0102ºÅ·É»ú
-		 */
-//		images.put("enemyplane_01", GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_01.png"));
-//		images.put("enemyplane_02", GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_02.png"));
-		
-		/*
-		 * test3
-		 */
-//		images.put("enemyplane_1", GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_1.jpg"));
-//		images.put("enemyplane_2", GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_2.jpg"));
-//		images.put("enemyplane_3", GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_3.jpg"));
-		/*
-		 * ±¬Õ¨¶¯Í¼
-		 */
-//		for (int i = 1; i <= 5; i++) {
-//			images.put("enemyplane_01"+"_0"+i, GameUtil.getImage(Constant.IMG_PRE+"/plane/enemyplane/enemyplane_01"+"_0"+i+".png"));
-//		}
-		
 		/**
 		 * ÎÒ·½01ºÅ·É»ú×Óµ¯01
 		 */
@@ -69,18 +50,6 @@ public class ImageUtil {
 		images.put("enemyplane_02", GameUtil.getImage(Constant.IMG_PRE+"plane/enemyplane/enemyplane_04.png"));
 		images.put("enemyplane_02", GameUtil.getImage(Constant.IMG_PRE+"plane/enemyplane/enemyplane_05.png"));
 		
-		/*
-		 * Ð¡¹ÖÊÞ1ºÅ
-		 */
-		for (int i = 1; i <= 3; i++) {
-			images.put("enemymonster_01"+"_0"+i, GameUtil.getImage(Constant.IMG_PRE+"enemymonster/enemymonster_01"+"_0"+i+".png"));
-		}
-		/*
-		 * Ð¡¹ÖÊÞ2ºÅ
-		 */
-		for (int i = 1; i <= 5; i++) {
-			images.put("enemymonster_02"+"_0"+i, GameUtil.getImage(Constant.IMG_PRE+"enemymonster/enemymonster_02"+"_0"+i+".png"));
-		}
 		
 		/*
 		 * 01ºÅ±¬Õ¨×éÍ¼

@@ -13,33 +13,6 @@ public class EnemyPlane extends Plane {
 	public int type;
 
 	/*
-	 * 多张图片组
-	 */
-	// public static Image[] imgs1 = { ImageUtil.images.get("enemyplane_1"),
-	// ImageUtil.images.get("enemyplane_2"),
-	// ImageUtil.images.get("enemyplane_3"), };
-
-	/*
-	 * 地方怪兽组图
-	 */
-	public static Image[] imgs = new Image[8];
-
-	static {
-
-		for (int i = 0; i < 3; i++) {
-			imgs[i] = ImageUtil.images.get("enemymonster_01" + "_0" + (i + 1));
-		}
-
-		for (int i = 3; i < 5; i++) {
-			imgs[i] = ImageUtil.images.get("enemymonster_02" + "_0" + (i - 2));
-		}
-//		for (int i = 8; i < 12; i++) {
-//			imgs[i] = ImageUtil.images.get("enemyplne_06" + "_" + (i -7));
-//		}
-
-	}
-
-	/*
 	 * 无参数
 	 */
 	public EnemyPlane() {
